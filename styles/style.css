@@ -1,96 +1,106 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf);
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf);
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url(../assets/imgs/background.jpg);
-    background-position: center;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+body {
+  background-image: url(../assets/imgs/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.title-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 40px;
-    background-color: rgba(250, 235, 215, 0.658);
-    margin: 1% 20%;
-    padding: 20px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    font-family: 'Motnserrat';
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: #faebd7a8;
+  margin: 1% 20%;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  font-family: "Montserrat";
 }
 
-.title-container h1{
-    white-space: none;
-    width:14ch;
-    animation: typing 2s steps(14) ;
-    overflow: hidden;
+.title-container h1 {
+  font-size: 1.2rem;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 14ch;
+  color: rgb(10, 10, 9);
+  animation: typing 1s steps(14), blink 0.5s infinite step-start alternate;
+  overflow: hidden;
 }
 
 @keyframes typing {
-    from{margin:0}   
+  from {
+    width: 0;
+  }
 }
 
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 /* Este pseudoselecto es el hover que lo que realiza es que cuando se pasa el raton por encima del elemento al que apunta cambia a los atributos que le ehamos dado */
-.title-container:hover{
-    animation: titleBox 1s ease-in-out infinite alternate;
-    
+.title-container:hover {
+  animation: titleBox 1s ease-in-out infinite alternate;
 }
 
 @keyframes titleBox {
-    from{
-        transform: translateX(0) translateY(0);
-        box-shadow: 10px 10px 10px rgb(230, 6, 73);
-    }
-    to{
-        transform: translateX(10px) translateY(10px);
-        box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    }
+  from {
+    transform: translateX(0) translateY(0);
+    box-shadow: 10px 10px 10px #e60649;
+  }
+  to {
+    transform: translateX(10px) translateY(10px);
+    box-shadow: 5px 5px 5px #000000;
+  }
 }
 
-.auto-container{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 40px;
-    background-color: rgba(250, 235, 215, 0.658);
-    background: linear-gradient(90deg rgb(164, 163, 163) 35%, rgb(230, 6, 73) 100%);
-    margin: 1% 20%;
-    padding: 20px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    font-family: 'Montserrat';
-    font-size: 1.1rem;
-    overflow: hidden;
+.auto-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: rgb(250, 235, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 235, 215, 0.65) 17%,
+    rgba(230, 6, 73, 0.65) 100%
+  );
+  margin: 1% 20%;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  overflow: hidden;
 }
 
 .auto-container p {
-    animation: resultbox 2s ease-in-out;
-    overflow: hidden;
+  animation: resultbox 2s ease-in-out;
+  overflow: hidden;
 }
 
 @keyframes resultbox {
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0);
-    }
-    
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
