@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url(../assets/imgs/background.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: rgba(250, 235, 215, 0.658);
+    margin: 1% 20%;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    font-family: 'Motnserrat';
+}
+
+@keyframes typing {
+    from{margin:0}
+    to{}
+    
+}
+
+/* Este pseudoselecto es el hover que lo que realiza es que cuando se pasa el raton por encima del elemento al que apunta cambia a los atributos que le ehamos dado */
+.title-container:hover{
+    animation: titleBox 2s ease-in-out infinite alternate;
+    
+}
+
+@keyframes titleBox {
+    from{
+        transform: translateX(0) translateY(0);
+        box-shadow: 10px 10px 10px rgb(230, 6, 73);
+    }
+    to{
+        transform: translateX(10px) translateY(10px);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    }
+}
+
+.auto-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: rgba(250, 235, 215, 0.658);
+    margin: 1% 20%;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    font-family: 'Motnserrat';
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.auto-container p {
+    animation: resultbox 2s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes resultbox {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}

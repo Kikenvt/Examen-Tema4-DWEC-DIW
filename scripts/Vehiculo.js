@@ -20,9 +20,9 @@ export class Vehiculo {
         const datos = `-Marca: ${this.#marca}<br>
                        -Modelo: ${this.#modelo}<br>
                        -Color: ${this.#color}<br>
-                       -Fabricación: ${this.#fabricacion}<br>
-                       -Cilindrada: ${this.cilindrada}<br>`;
-        mostrarResultados(datos);
+                       -Fabricación: año ${this.#fabricacion}<br>
+                       -Cilindrada: ${this.cilindrada}cc<br>`;
+        mostrarResultados(`${datos}`);
     }
 
     arrancar() {
@@ -79,4 +79,16 @@ export class Vehiculo {
     set cilindrada(value) {
         this.#cilindrada = value;
     }
+
+    // Con este metodo aplicado a una clase el metodo JSON.stringify automaticamente lo busca en la clase y lo transforma en un Objeto, no es lo que se pide en el enunciado pero es una forma más "comoda"
+
+    // toJSON(){
+    //     return {
+    //         marca: this.#marca,
+    //         modelo: this.#modelo,
+    //         color: this.#color,
+    //         fabricacion: this.#fabricacion,
+    //         cilindrada: this.#cilindrada
+    //     }
+    // }
 }
