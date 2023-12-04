@@ -21,7 +21,7 @@ export class Vehiculo {
                        -Modelo: ${this.#modelo}<br>
                        -Color: ${this.#color}<br>
                        -Fabricación: año ${this.#fabricacion}<br>
-                       -Cilindrada: ${this.cilindrada}cc<br>`;
+                       -Cilindrada: ${this.cilindrada}cc`;
         mostrarResultados(`${datos}`);
     }
 

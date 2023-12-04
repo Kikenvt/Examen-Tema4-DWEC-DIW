@@ -25,7 +25,7 @@ export class automovilDeportivo extends Vehiculo {
     super.mostrarDatos()
     
     const pot = `-Potencia: ${this.#potenciaMotor}cv`
-    mostrarResultados(`${pot}`)
+    mostrarResultados(`<p>${pot}</p>`)
   }
 
   

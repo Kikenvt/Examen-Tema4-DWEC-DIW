@@ -6,12 +6,13 @@
 import { Vehiculo } from "./Vehiculo.js"
 import { automovilDeportivo } from "./automovilDeportivo.js"
 
+
 // Vinculamos el elemento del HTML donde mostraremos los datos
 const autoContainer = document.getElementById("resultadoContainer")
 
 // Creamos una funcion para mostrar los datos en el HTML que exportaremos para utilizar tambien en las clases
 export const mostrarResultados = (mensaje) => {
-  autoContainer.innerHTML += `<p>${mensaje}</p>`
+  autoContainer.innerHTML += `<p>${mensaje}</p><br>`
 }
 
 // Creamos una instancia vehiculo y mostramos los datos
