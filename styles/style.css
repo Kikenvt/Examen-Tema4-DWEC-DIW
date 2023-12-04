@@ -33,7 +33,7 @@ body {
 .title-container h1 {
   font-size: 1.2rem;
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   white-space: nowrap;
   border-right: 4px solid;
   width: 14ch;
@@ -87,7 +87,7 @@ body {
   padding: 20px;
   box-shadow: 10px 10px 10px rgb(0, 0, 0);
   font-family: "Montserrat";
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   overflow: hidden;
 }
 
