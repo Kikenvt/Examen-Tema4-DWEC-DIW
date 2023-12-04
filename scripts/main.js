@@ -69,7 +69,10 @@ for (let key in deportivoObjet) {
     }
 }
 // Dejo comentados los siguenter metodos para:
+
 // Eliminar un Item del localStorage
 //localStorage.removeItem('potencia')
+//localStorage.removeItem('color')
+
 // Vaciar por completo el localStorage
 // localStorage.clear()
